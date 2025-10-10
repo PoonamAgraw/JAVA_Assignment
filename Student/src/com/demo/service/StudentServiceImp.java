@@ -1,9 +1,8 @@
 package com.demo.service;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.Scanner;
-
-
 import com.demo.dao.*;
 import com.demo.beans.*;
 
@@ -32,10 +31,15 @@ public class StudentServiceImp implements StudentService {
 		int m3 = sc.nextInt();
 		System.out.println("Enter A Birth Date");
 		String bdate = sc.next();
-		
 		LocalDate ldt = LocalDate.parse(bdate,DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 		Student s = new Student( sid, sname,  m1,  m2,  m3, ldt);
 		return edao.save(s);
+	}
+
+	@Override
+	public List<Student> displayData() {
+		
+		return edao.displayAll();
 	}
 
 }

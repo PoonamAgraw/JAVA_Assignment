@@ -31,26 +31,27 @@ public class StudentTest {
 			System.out.println("13.Exit");
 			System.out.println("Enter Your Choice");
 			choice = sc.nextInt();
-			
-			
 			switch(choice) {
 			case 1->{
-				{
-					boolean status = eservice.addNewSWtudent();
+				boolean status = eservice.addNewSWtudent();
 					if (status) {
 						System.out.println("Add Successfully");
-					} else {
+					} 
+					else {
 						System.out.println("Not Found");
 					}
-				}
+			}
+			case 2 ->{
+				List<Student> studlist = eservice.displayData();
+				studlist.forEach(System.out::println);
+				
+				
+				
 			}
 			}
-
-			
-			
-	        }
-		while(choice !=10);
-    }
+	
+    }	while(choice !=10);
+}
 }
 
 
