@@ -42,4 +42,38 @@ public class StudentServiceImp implements StudentService {
 		return edao.displayAll();
 	}
 
+	@Override
+	public Student searchById(int id) {
+		// TODO Auto-generated method stub
+		return edao.findById(id);
+	}
+
+	@Override
+	public List<Student> findByName(String sname) {
+		// TODO Auto-generated method stub
+		return edao.FindByName(sname);
+	}
+
+	@Override
+	public boolean deleteById(int sid) {
+		// TODO Auto-generated method stub
+		return edao.removeById(sid);
+	}
+
+	
+
+	@Override
+	public List<Student> deleteByName(String name) {
+		// TODO Auto-generated method stub
+		return edao.removeByName(name);
+	}
+
+	@Override
+	public boolean deleteByMarks(int smarks) {
+		// TODO Auto-generated method stub
+		return edao.deleteByMarks(smarks);
+	}
+
+	
+
 }

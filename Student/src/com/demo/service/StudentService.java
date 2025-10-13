@@ -10,4 +10,22 @@ public interface StudentService {
 
 	List<Student> displayData();
 
+	Student searchById(int id);
+
+	List<Student> findByName(String sname);
+
+	boolean deleteById(int sid);
+
+	List<Student> deleteByName(String name);
+
+	boolean deleteByMarks(int smarks);
+
+	
+
+	
+
+	
+
+	
+
 }

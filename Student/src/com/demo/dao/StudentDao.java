@@ -10,4 +10,16 @@ public interface StudentDao {
 
 	List<Student> displayAll();
 
+	Student findById(int id);
+
+	List<Student> FindByName(String sname);
+
+	boolean removeById(int sid);
+
+
+
+	List<Student> removeByName(String name);
+
+	boolean deleteByMarks(int smarks);
+
 }

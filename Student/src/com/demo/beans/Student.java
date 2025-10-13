@@ -1,6 +1,7 @@
 package com.demo.beans;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Student {
 	private int sid;
@@ -20,6 +21,20 @@ public class Student {
 		this.m3 = m3;
 		this.bdate = bdate;
 	}
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		System.out.println("In Equals Method"+this.sid+"......"+((Student)obj).getSid()) ;
+		return this.sid== ((Student)obj).getSid();
+		
+	} 
+	public Student(int sid) {
+		super();
+		this.sid = sid;
+	}
+	
+	
 	public int getSid() {
 		return sid;
 	}
