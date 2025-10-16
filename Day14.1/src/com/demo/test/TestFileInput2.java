@@ -10,7 +10,7 @@ public class TestFileInput2 {
 	public static void main(String[] args) {
 		FileInputStream fis=null;
 		FileOutputStream fos=null;
-		//open file for reading purpose
+		
 		try {
 			 fis=new FileInputStream("myfile.txt");
 			fos=new FileOutputStream("myfilecopy.txt");

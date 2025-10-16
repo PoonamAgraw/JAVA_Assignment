@@ -10,7 +10,7 @@ public class TestFunctionalInterface {
 		 MyNewCompare ob=new MyNewCompare();
 		 ob.compare(10, 20);
 		 
-		 //using Annonymous class
+
 		 MyComparable ob1=new MyComparable() {
 			
 			@Override

@@ -18,8 +18,7 @@ public class TestHashSet {
 		System.out.println(hset);
 		hset.remove(5);
 		System.out.println(hset);
-		//when foreach loop starts execution, 
-		//then donot change the length of the collection
+		
 		for(Integer num:hset) {
 			System.out.println(num);
 		}

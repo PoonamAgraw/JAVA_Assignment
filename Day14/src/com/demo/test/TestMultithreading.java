@@ -9,16 +9,16 @@ public class TestMultithreading {
 
 	public static void main(String[] args) {
 		MyClass ob=new MyClass();
-		//using Thread
+	
 		FactorialThread fth=new FactorialThread(5,ob);
 		fth.start();
 		Table th1=new Table(3, ob);
 		th1.start();
-		//using Thread
+		
 		Table th2=new Table(7, ob);
 		th2.start();
 		
-		//using Runnable object
+	
 		PrimeNo th3=new PrimeNo(9, ob);
 		Thread th=new Thread(th3);
 		th.start();

@@ -11,7 +11,7 @@ public class TestNIOClasses {
 
 	public static void main(String[] args) {
 		try {
-			//create a path object
+			
 		Path p=Paths.get("empcsv.csv");
 	    
 	    List<String> lst1=Files.readAllLines(p);

@@ -22,7 +22,7 @@ public class TestReadCSV {
 			String line=br.readLine();
 			while(line!=null) {
 				String[] arr=line.split(",");
-				//Employee e1=new Employee(Integer.parseInt(arr[0]),arr[1],arr[2],Double.parseDouble(arr[3]));
+				
 						
 				Employee emp=new Employee();
 				emp.setEid(Integer.parseInt(arr[0]));

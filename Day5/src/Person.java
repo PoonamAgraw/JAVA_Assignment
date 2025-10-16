@@ -6,7 +6,7 @@ public class Person {
 	static {
 		cnt=0;
 	}
-	//private final int c=10;
+	
 	private final int c;
 	public Person() {
 		super();
@@ -25,9 +25,7 @@ public class Person {
 	public int getPid() {
 		return pid;
 	}
-	/*public void setPid(int pid) {
-		this.pid = pid;
-	}*/
+	
 	public String getPname() {
 		return pname;
 	}
