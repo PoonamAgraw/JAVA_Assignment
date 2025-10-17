@@ -38,11 +38,9 @@ public class TestReadCSV {
 			
 			
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}		
          lst.add(new Employee(34,"xxxx","admin",45678));
          try(BufferedWriter bw=new BufferedWriter(new FileWriter("empdata.txt"));){
@@ -52,8 +50,7 @@ public class TestReadCSV {
         		 bw.write(str);
         	}
          } catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+        	 System.out.println(e.getMessage());
 		}
 	}
 

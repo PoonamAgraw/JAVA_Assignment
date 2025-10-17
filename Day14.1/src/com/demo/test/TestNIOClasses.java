@@ -30,7 +30,6 @@ public class TestNIOClasses {
 		}catch(FileNotFoundException e) {
 			System.out.println(e.getMessage());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			System.out.println("Error in reading");
 		}
 

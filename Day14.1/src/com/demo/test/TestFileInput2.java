@@ -30,8 +30,7 @@ public class TestFileInput2 {
 				fis.close();
 				fos.close();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				System.out.println(e.getMessage());
 			}
 			
 		}

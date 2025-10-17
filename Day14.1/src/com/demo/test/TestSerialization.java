@@ -26,11 +26,9 @@ public class TestSerialization {
 				oos.writeObject(e);
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 
 		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("empdata1.txt"))) {
@@ -43,14 +41,11 @@ public class TestSerialization {
 		} catch (EOFException e) {
 			System.out.println("Reached to end of file....");
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+			System.out.println(e.getMessage());
+		} catch (ClassNotFoundException e) {
+			System.out.println(e.getMessage());
 		}
 	}
 

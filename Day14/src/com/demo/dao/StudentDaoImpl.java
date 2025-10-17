@@ -34,14 +34,11 @@ public class StudentDaoImpl implements StudentDao {
 				
 				
 			}catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				System.out.println(e.getMessage());
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				System.out.println(e.getMessage());
 			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				System.out.println(e.getMessage());
 			}
 		}
 		System.out.println("size: "+slt.size());
@@ -94,11 +91,11 @@ public class StudentDaoImpl implements StudentDao {
 				oos.writeObject(s);
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		
+			System.out.println(e.getMessage());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		
+			System.out.println(e.getMessage());
 		}
 	}
 

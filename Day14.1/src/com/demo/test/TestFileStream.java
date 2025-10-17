@@ -13,7 +13,7 @@ public class TestFileStream {
 		 FileOutputStream fos=null;
 		 try {
 		 if(f.exists()) {
-			 //open file in append mode
+			
 			  fos=new FileOutputStream("myfilecopy.txt",true);
 		 }else {
 			
@@ -21,8 +21,7 @@ public class TestFileStream {
 			}
 		 
 	} catch (FileNotFoundException e) {
-
-		e.printStackTrace();
+		System.out.println(e.getMessage());
 	}
 		 
 

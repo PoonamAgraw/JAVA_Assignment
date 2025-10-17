@@ -22,8 +22,7 @@ public class TestDataStream {
 			 System.out.println(num+"----"+num1+"----"+nm);
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 
 	}

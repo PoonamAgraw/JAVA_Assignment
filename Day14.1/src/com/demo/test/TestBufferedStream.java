@@ -22,8 +22,7 @@ public class TestBufferedStream {
 				bos=new BufferedOutputStream(new FileOutputStream(f));
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		try(BufferedInputStream bis=new BufferedInputStream(
 				                           new FileInputStream("myfile.txt"));
@@ -36,11 +35,9 @@ public class TestBufferedStream {
 			}
 			
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 
 	}
